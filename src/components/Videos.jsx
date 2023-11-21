@@ -1,5 +1,5 @@
 import Video from "./Video";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { MdSkipNext, MdSkipPrevious } from "react-icons/md";
 import Button from "./Button";
 
