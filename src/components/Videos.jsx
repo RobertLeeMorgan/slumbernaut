@@ -35,7 +35,7 @@ export default function Videos() {
   };
 
   return (
-    <container>
+    <section>
       <h3>Videos</h3>
       <div className="container videos">
         {!edge.left && (
@@ -45,13 +45,13 @@ export default function Videos() {
             scroll={scrollLeft}
           />
         )}
-        <container
+        <ul
           className="scroller snaps-inline" onTouchMove={handleTouchStart}
           ref={scroll}
         >
-          <Video youtubeId="5_djHNws7A4" />
-          <Video youtubeId="AK54M8UKCUc" />
-        </container>
+          <Video youtubeId="5_djHNws7A4" title='Follower (Official Video)'/>
+          <Video youtubeId="AK54M8UKCUc" title='Taste of Spring'/>
+        </ul>
         {!edge.right && (
           <Button
             title={<MdSkipNext />}
@@ -61,6 +61,6 @@ export default function Videos() {
         )}
       </div>
       <hr className="break" />
-    </container>
+    </section>
   );
 }

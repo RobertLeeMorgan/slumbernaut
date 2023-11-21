@@ -35,7 +35,7 @@ export default function Records() {
   };
 
   return (
-    <container>
+    <section>
       <h3>Releases</h3>
       <div className="container">
         {!edge.left && (
@@ -45,20 +45,20 @@ export default function Records() {
             scroll={scrollLeft}
           />
         )}
-        <container
+        <ul
           className="scroller snaps-inline"
           onTouchStart={handleTouchStart}
           ref={scroll}
         >
           {records.map((record) => (
-            <Cards record={record} />
+            <Cards key={record.title} record={record} />
           ))}
-        </container>
+        </ul>
         {!edge.right && (
           <Button title={<MdSkipNext />} style="button" scroll={scrollRight} />
         )}
       </div>
       <hr className="break" />
-    </container>
+    </section>
   );
 }

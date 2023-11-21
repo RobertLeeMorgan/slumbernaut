@@ -170,6 +170,7 @@ h3 {
   border-radius: 12px;
   aspect-ratio: 16/ 9;
   margin: 0 3vw;
+  border: 0px;
   @media (max-width: 750px) {
     width: 270px;
     margin: 0 2vw;
