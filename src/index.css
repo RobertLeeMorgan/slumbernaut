@@ -31,16 +31,20 @@ body {
 h1 {
   text-align: center;
   margin-top: -10px;
-  font-size: 8vw;
-  font-weight: 400;
+  font-size: 10vw;
+  font-weight: 500;
   line-height: 1.1;
-  letter-spacing: 4vw;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  @media (min-width: 800px) {
+  padding: 0 auto;
+  letter-spacing: 2vw;
+  font-family: Space Mono, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  @media (min-width: 700px) {
     font-size: 3.2em;
-    letter-spacing: 0.7em;
+    letter-spacing: 0.5em;
   }
-}
+  @media (max-width: 700px) and (min-width: 500px){
+    font-size: 2.8em;
+    letter-spacing: 0.3em;
+  }}
 
 a {
   font-weight: 500;
@@ -49,7 +53,6 @@ a {
   text-decoration: none;
   padding: 0 2vw;
   @media (max-width: 600px) {
-    font-size: large;
     padding: 0 3vw;
   }
 }
@@ -133,12 +136,13 @@ a:hover,
 
 .card h5 {
   letter-spacing: 0.3em;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-top: 31px;
   display: flex;
+  font-family: "Franklin Gothic Medium";
   height: 0px;
   @media (min-width: 800px) {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 35px;
   }
 }
@@ -157,11 +161,19 @@ h3 {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   margin-left: 30px;
+  letter-spacing: 0.1rem;
   margin-bottom: 20px;
   font-size: 1.5rem;
   @media (min-width: 800px) {
     margin-left: 60px;
   }
+}
+
+.loader {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
 }
 
 .video {
@@ -210,12 +222,13 @@ h3 {
 }
 
 .show-button {
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.87);
   font-size: 1rem;
   background-color: #343438;
   border-radius: 12px;
   align-items: center;
+  font-family: Space Mono;
   display: flex;
   padding: 15px 20px;
   border: none;
@@ -243,12 +256,6 @@ h3 {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-.hide {
-  @media (min-width: 600px) {
-    display: none;
   }
 }
 
