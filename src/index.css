@@ -16,7 +16,7 @@
   height: 30rem;
   background-position-y: center;
   background-image: linear-gradient(to bottom, transparent 70%, #1a1a20),
-    url("main.png");
+    url("/main.png");
   background-size: cover;
   @media (max-width: 600px) {
     background-position-x: center;
@@ -262,7 +262,7 @@ h3 {
       rgba(26, 26, 31, 0.7),
       rgba(26, 26, 31, 0.7)
     ),
-    url("main.png");
+    url("/main.png");
   padding: 20px;
   font-size: 1.2rem;
   border: solid 2px #343438;

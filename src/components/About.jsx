@@ -17,7 +17,7 @@ export default function About() {
       <Modal open={showModal} onClose={handleClose} />
       <button className="show-button" onClick={handleClick}>
         About Slumbernaut{" "}
-        <img className="logo spin" src="naut.png" alt="Astronaut icon" />
+        <img className="logo spin" src="/naut.png" alt="Astronaut icon" />
       </button>
     </section>
   );
