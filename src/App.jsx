@@ -22,6 +22,7 @@ function App() {
           color="purple"
           ariaLabel="loading"
           wrapperStyle
+          wrapperClass
         />
       </div>
     );
