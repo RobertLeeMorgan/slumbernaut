@@ -5,11 +5,11 @@ export default function About() {
   const [showModal, setShowModal] = useState(false);
 
   function handleClick() {
-    setShowModal(true);
+    setShowModal(() => true);
   }
 
   function handleClose() {
-    setShowModal(false);
+    setShowModal(() => false);
   }
 
   return (

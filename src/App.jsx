@@ -1,6 +1,5 @@
 import About from "./components/About";
 import Header from "./components/Header";
-import Links from "./components/Links";
 import Records from "./components/Records";
 import Videos from "./components/Videos";
 import { useState, useEffect } from "react";
@@ -10,7 +9,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading((isLoading) => false);
+    setIsLoading(() => false);
   }, []);
 
   if (isLoading) {
@@ -23,7 +22,6 @@ function App() {
           color="purple"
           ariaLabel="loading"
           wrapperStyle
-          wrapperClass
         />
       </div>
     );
@@ -31,7 +29,6 @@ function App() {
   return (
     <>
       <Header />
-      <Links />
       <Records />
       <Videos />
       <About />

@@ -1,6 +1,6 @@
-export default function Button({ scroll, style, title }) {
+export default function Button({ scroll, title }) {
   return (
-    <button onClick={scroll} className={style}>
+    <button onClick={scroll} className='button highlight'>
       {title}
     </button>
   );

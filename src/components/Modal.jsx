@@ -38,7 +38,7 @@ export default function Modal({ open, onClose }) {
         2023 Slumbernaut will return to your ears with his first ever full
         length record.
       </p>
-      <button onClick={onClose} className="close">
+      <button onClick={onClose} className="close highlight">
         <IoClose />
       </button>
     </dialog>,
