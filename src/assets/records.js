@@ -2,13 +2,20 @@ import driftImg from "./artwork/dirft.png";
 import intangibleImg from "./artwork/intangible.png";
 import phasesImg from "./artwork/phases.jpg";
 import followerImg from "./artwork/follower.png";
+// import topiaryImg from "./artwork/topiary.png";
 
 export const records = [
+  {
+    title: "topiary",
+    image: driftImg,
+    link: "https://hypeddit.com/slumbernaut/topiary",
+    tag: "new single",
+  },
   {
     title: "drift",
     image: driftImg,
     link: "https://hypeddit.com/slumbernaut/drift",
-    tag: "new single",
+    tag: "single",
   },
   {
     title: "intangible",

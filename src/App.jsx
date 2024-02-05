@@ -4,6 +4,7 @@ import Records from "./components/Records";
 import Videos from "./components/Videos";
 import { useState, useEffect } from "react";
 import { Audio } from "react-loader-spinner";
+import Footer from './components/Footer'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
       <Records />
       <Videos />
       <About />
+      <Footer/>
     </>
   );
 }

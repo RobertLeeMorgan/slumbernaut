@@ -1,6 +1,6 @@
 export default function Cards({ record }) {
   return (
-    <a href={record.link} target="_blank">
+    <a className="distro" href={record.link} target="_blank">
       <div className="card">
         <img loading="lazy" src={record.image} alt={`${record.title} artwork`} />
         <div className="contents">
